@@ -6,26 +6,23 @@ int main() {
     freopen("input.txt", "r", stdin);
     freopen("output.txt", "w", stdout);
 #endif
-
-    int a , b , c;
-    cin>> a >> b >> c;
-
-    if (a > b){
-        if (a > c){
-            cout << a << endl;
-        }else {
-            cout << c << endl;
-        }
-    }else{
-        if(b > c){
-            cout << b << endl;
-        }else{
-            cout << c << endl;
-        }
-    }
 	
-  
+   int savings;
+   cin >> savings;
 
+   if (savings > 5000) {
+      if (savings > 10000)
+      {
+          cout << "road Trip with Neha" << endl;
+      } else {
+          cout << "Shopping with Neha" << endl;
+      }
+      
+   } else if(savings > 2000) {
+       cout << "rashmi" << endl;
+   }else{
+       cout<< "friends" << endl;
+   }
 
     return 0;
 }
